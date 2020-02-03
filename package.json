@@ -1,0 +1,19 @@
+{
+  "name": "fullstack2020-3",
+  "version": "1.0.0",
+  "description": "Fullstack week 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaffeFIN/fullstack2020-3.git"
+  },
+  "author": "Walter Grönholm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaffeFIN/fullstack2020-3/issues"
+  },
+  "homepage": "https://github.com/WaffeFIN/fullstack2020-3#readme"
+}
