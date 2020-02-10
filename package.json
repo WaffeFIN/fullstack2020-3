@@ -10,7 +10,8 @@
     "build:ui": "cd ~/GitHub/fullstack2020/osa2/puhelinluettelo && rm -rf build && npm run build --prod && cp -r build ~/GitHub/fullstack2020-3/",
     "deploy": "git push heroku master",
     "deploy:full": "rm -rf build && npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "nodemon": "^2.0.2"
   }
 }
