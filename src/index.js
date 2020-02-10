@@ -13,6 +13,8 @@ app.use(morgan(
 
 app.use(express.json())
 
+app.use(express.static('build'))
+
 let persons = [
     {
       id: 1,
