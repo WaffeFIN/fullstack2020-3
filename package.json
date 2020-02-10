@@ -2,8 +2,10 @@
   "name": "fullstack2020-3",
   "version": "1.0.0",
   "description": "Fullstack week 4",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/WaffeFIN/fullstack2020-3/issues"
   },
-  "homepage": "https://github.com/WaffeFIN/fullstack2020-3#readme"
+  "homepage": "https://github.com/WaffeFIN/fullstack2020-3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
