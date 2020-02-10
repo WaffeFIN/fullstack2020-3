@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "cd ~/GitHub/fullstack2020/osa2/puhelinluettelo && rm -rf build && npm run build --prod && cp -r build ~/GitHub/fullstack2020-3/",
+    "deploy": "git push heroku master",
+    "deploy:full": "rm -rf build && npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",    
+    "logs:prod": "heroku logs --tail"
   },
   "repository": {
     "type": "git",
